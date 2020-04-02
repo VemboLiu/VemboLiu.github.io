@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VemboLiu</title>
+    <link href="./style/style.css" rel="stylesheet">
+    
+    <script>
+        // alert('页面施工中~下面看到的不代表最终效果')
+        function click_listen(id){
+            var act = document.getElementsByClassName("active");
+            var i;
+            var len1 = document.getElementsByClassName("active").length;
+
+            act[0].classList.remove("active");
+
+            
+            id.classList.add("active");
+            
+            
+        }
+        function url_jump(id){
+            console.log(id);
+            if (id== 'sylr'){
+                window.open("https://sheng-yan-liu-ran.gitee.io/", "_blank"); 
+            }
+            if(id== 'cnblog'){
+                window.open("https://www.cnblogs.com/dlnb526/", "_blank"); 
+            }
+            if(id=="dln"){
+                window.open("https://lwb-dln.gitee.io/","_blank");
+            }
+        }
+
+
+    </script> 
+</head>
+<body>
+    <header>
+        
+        <ul>
+            <li><a class="active tab_item" href="#" onclick="click_listen(this)">主页</a></li>
+            <li><a class="tab_item" href="#skill_tree" onclick="click_listen(this)">技能树</a></li>
+            <li><a class="tab_item" href="#journey" onclick="click_listen(this)">个人经历</a></li>
+            <li><a class="tab_item" href="#relate_url" onclick="click_listen(this)">相关链接</a></li>
+        </ul>
+
+        <footer>
+            <div>
+                
+                <p>&copyVemboLiu 2020 All Right Reserved</p>
+                <p>页面上次更新：2020.4.2</p>
+                <p>页面施工中~</p>
+                
+           </div>
+            <div></div>
+            <div></div>
+        </footer>
+    </header>
+
+    <main>
+    <div class='main1'>
+        <h1>VemboLiu</h1>
+
+    </div>
+    <div class="skills" id ="skill_tree">
+        <p class="title">计算机语言技能</p>
+        <ul>
+            <li>C++（课堂学习，已经忘了大部分）</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>Html+CSS+Javascript</li>
+            <li>Matlab</li>
+        </ul>
+        <p>其他</p>
+    </div>
+
+    <div class="journey" id="journey">
+        <p class="title">个人经历</p>
+        <ul>
+            <p>2013-2016 赤峰二中 高中就读</p>
+            <li>赤峰二中外联部 副部长</li>
+            <p>2016-2020 华中科技大学 信息与计算科学专业本科就读</p>
+            <li>华中科技大学数学与统计学院分团委组织部 部长</li>
+            <li>华中科技大学数学与统计学院《数说》期刊组 组长</li>
+            <li>华中科技大学夏雨诗社 副社长</li>
+            <li>华中科技大学瑜山国学社外联部 部长</li>
+            <li>华中科技大学数学与统计学院赴西安小微企业发展状况调查暑期社会实践队 队员（2017 年湖北省“三下乡”活动
+                优秀团队）</li>
+            <p class = 'now'>2020 考研失利~二战ing</p>
+        </ul>
+    </div>
+    <div class='Mypages' id="relate_url">
+        <p class="title">个人相关链接</p>
+        <div class="page_info" id="sylr" onclick="url_jump(this.id)">
+            <div class = 'page-title'>
+                声言柳然
+            </div>
+            <div class="page-discr">
+                个人的文艺空间。记录生活，阅读与创作
+            </div>
+            
+        </div>
+        <div class="page_info" id="cnblog" onclick="url_jump(this.id)">
+            <div class = 'page-title'>
+                dlnb526的博客园
+            </div>
+            <div class="page-discr">
+                技术博客汇集地
+            </div>
+            
+        </div>
+        <div class="page_info" id="dln" onclick="url_jump(this.id)">
+            <div class = 'page-title'>
+                lwb&dln
+            </div>
+            <div class="page-discr">
+                甜甜的恋爱
+            </div>
+            
+        </div>
+    </div>
+    </main>
+
+</body>
+</html>
