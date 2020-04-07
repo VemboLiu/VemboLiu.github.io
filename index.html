@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VemboLiu</title>
     <link href="./style/style.css" rel="stylesheet">
+    <link href="./style/snackbar.css" rel="stylesheet">
     
     <script>
         // alert('页面施工中~下面看到的不代表最终效果')
@@ -32,6 +33,11 @@
                 window.open("https://lwb-dln.gitee.io/","_blank");
             }
         }
+        function snackbar() {
+            var x = document.getElementById("snackbar")
+            x.className = "show";
+            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+        }
 
 
     </script> 
@@ -50,8 +56,8 @@
             <div>
                 
                 <p>&copyVemboLiu 2020 All Right Reserved</p>
-                <p>页面上次更新：2020.4.2</p>
-                <p>页面施工中~</p>
+                <p>页面上次更新：2020.4.6</p>
+                <p onclick="snackbar()">页面施工中~</p>
                 
            </div>
             <div></div>
@@ -64,8 +70,8 @@
         <h1>VemboLiu</h1>
 
     </div>
-    <div class="skills" id ="skill_tree">
-        <p class="title">计算机语言技能</p>
+    <div class="skills" id ="skill_tree" onclick="snackbar()">
+        <p class="title" >计算机语言技能</p>
         <ul>
             <li>C++（课堂学习，已经忘了大部分）</li>
             <li>Python</li>
@@ -76,7 +82,7 @@
         <p>其他</p>
     </div>
 
-    <div class="journey" id="journey">
+    <div class="journey" id="journey" onclick="snackbar()">
         <p class="title">个人经历</p>
         <ul>
             <p>2013-2016 赤峰二中 高中就读</p>
@@ -91,37 +97,40 @@
             <p class = 'now'>2020 考研失利~二战ing</p>
         </ul>
     </div>
-    <div class='Mypages' id="relate_url">
+    <div class='Mypages-box' id="relate_url">
         <p class="title">个人相关链接</p>
-        <div class="page_info" id="sylr" onclick="url_jump(this.id)">
-            <div class = 'page-title'>
-                声言柳然
-            </div>
-            <div class="page-discr">
-                个人的文艺空间。记录生活，阅读与创作
-            </div>
-            
-        </div>
-        <div class="page_info" id="cnblog" onclick="url_jump(this.id)">
-            <div class = 'page-title'>
-                dlnb526的博客园
-            </div>
-            <div class="page-discr">
-                技术博客汇集地
-            </div>
-            
-        </div>
-        <div class="page_info" id="dln" onclick="url_jump(this.id)">
-            <div class = 'page-title'>
-                lwb&dln
-            </div>
-            <div class="page-discr">
-                甜甜的恋爱
-            </div>
-            
-        </div>
+            <div class='Mypages'>
+                <div class="page_info" id="sylr" onclick="url_jump(this.id)">
+                    <div class = 'page-title'>
+                        声言柳然
+                    </div>
+                    <div class="page-discr">
+                        个人的文艺空间。记录生活，阅读与创作
+                    </div>
+                    
+                </div>
+                <div class="page_info" id="cnblog" onclick="url_jump(this.id)">
+                    <div class = 'page-title'>
+                        dlnb526的博客园
+                    </div>
+                    <div class="page-discr">
+                        技术博客汇集地
+                    </div>
+                    
+                </div>
+                <div class="page_info" id="dln" onclick="url_jump(this.id)">
+                    <div class = 'page-title'>
+                        lwb&dln
+                    </div>
+                    <div class="page-discr">
+                        甜甜的恋爱
+                    </div>
+                    
+                </div>
+    </div>
     </div>
     </main>
+    <div id="snackbar">施工中敬请期待！</div>
 
 </body>
 </html>

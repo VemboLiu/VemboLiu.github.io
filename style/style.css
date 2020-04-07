@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    
 }
 header{
     
@@ -32,6 +33,7 @@ header li a:hover:not(.active) {
     background-color: #555;
     color: white;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transition: 0.5s;
 }
 main{
     margin-left:25%;
@@ -40,7 +42,7 @@ main{
 }
 .main1{
     background-color: azure;
-    background-color: #f44336;
+    background-image: linear-gradient(to right, red , yellow);
     padding: 30px 40px;
     color: white;
     text-align: center;
@@ -67,12 +69,7 @@ div.journey:hover{
 p.now{
     color: blue;
 }
-div.Mypages{
-    background-color: darkgray;
-}
-div.Mypages:hover{
-    background-color: darkorange;
-}
+
 .title{
     font-size: large;
     font-style: oblique;
@@ -84,16 +81,38 @@ footer{
     margin: 10px;
 }
 .page_info{
-    background-color: rgb(136, 136, 136);
-    margin: 10px;
-    padding: 10px;
+    width:250px;
+    height: 150px;
+    border: skyblue;
+    border-style: solid;
+    margin: 20px;
+    padding: 20px;
     border-radius: 10px;
-    text-decoration: none;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.11), 5px;
+    text-align: center;
+
 }
 .page_info:hover{
     background-color: rgb(110, 109, 109);
     cursor: pointer;
+    transition: background-color 0.5s;
+    color: snow;
 }
 .page_info:active{
     background-color: rgb(134, 134, 134);
+}
+.page-title{
+    background-color: royalblue;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    height: 70px;
+    line-height:70px;
+}
+.page-discr{
+    padding: 10px;
+}
+.Mypages{
+    display: flex;
+    flex-wrap: wrap
 }
