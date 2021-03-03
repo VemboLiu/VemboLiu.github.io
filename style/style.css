@@ -47,19 +47,36 @@ main{
     color: white;
     text-align: center;
     margin-bottom: 20px;
+    text-shadow: -1px -1px 1px #aaa,
+             0px 4px 1px rgba(0,0,0,0.5),
+             4px 4px 5px rgba(0,0,0,0.7),
+             0px 0px 7px rgba(0,0,0,0.4);
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+
+.stage{
+    font-size: 2rem;
 }
 .skills,.journey,.Mypages{
     padding: 10px;
     border-radius: 20px;
     margin-bottom: 20px;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
 }
 div.skills{
     background-color: antiquewhite;
+    display:flex;
     
 }
 div.skills:hover{
     background-color: burlywood;
 }
+
+.skilla{
+    width: 50%;
+    
+}
+
 div.journey{
     background-color: aquamarine;
 }
@@ -93,7 +110,7 @@ footer{
 
 }
 .page_info:hover{
-    background-color: rgb(110, 109, 109);
+    background-color: rgba(58, 107, 180, 0.897);
     cursor: pointer;
     transition: background-color 0.5s;
     color: snow;
