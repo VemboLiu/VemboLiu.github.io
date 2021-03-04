@@ -214,7 +214,7 @@
             document.getElementsByTagName('body')[0].appendChild(canvas);
             cxt = canvas.getContext('2d');
             var sakuraList = new SakuraList();
-            // sakuraNum 樱花个数 (原版为50个)
+            // sakuraNum 樱花个数 
             for(var i = 0; i < sakuraNum; i++) {
                 var sakura, randomX, randomY, randomS, randomR, randomFnx, randomFny;
                 randomX = getRandom('x');
@@ -257,7 +257,7 @@
             startSakura();
         }
 
-        // 没看懂哪里调用了, 应该是关闭樱花特效的方法. 还请大佬们解释自己是怎么使用的.
+        
         function stopp() {
             if(staticx) {
                 var child = document.getElementById("canvas_sakura");
